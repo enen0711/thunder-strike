@@ -11,7 +11,8 @@ const finalScore = document.getElementById('final-score');
 const restartBtn = document.getElementById('restart-btn');
 const weaponBtns = document.querySelectorAll('.weapon-btn');
 
-canvas.width = 480;
+canvas.width = 520;
+//canvas.width = window.innerWidth;
 canvas.height = 800;
 
 // Game state
