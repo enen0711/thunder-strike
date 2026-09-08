@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thunder Strike Clone</title>
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas"></canvas>
+      
+      <!-- Start Screen / Bullet Selection -->
+      <div id="start-screen">
+        <h1>Thunder Strike</h1>
+        <h2>Select Your Weapon</h2>
+        <div class="weapon-options">
+          <button class="weapon-btn" data-weapon="normal">
+            <h3>Normal</h3>
+            <p>Balanced speed and damage.</p>
+          </button>
+          <button class="weapon-btn" data-weapon="spread">
+            <h3>Spread</h3>
+            <p>Fires in 3 directions.</p>
+          </button>
+          <button class="weapon-btn" data-weapon="laser">
+            <h3>Laser</h3>
+            <p>Pierces through enemies.</p>
+          </button>
+        </div>
+      </div>
+
+      <div id="ui-layer" class="hidden">
+        <div id="score-board">Score: <span id="score-value">0</span></div>
+        <div id="hp-board">HP: <span id="hp-value">100</span></div>
+      </div>
+
+      <div id="game-over-screen" class="hidden">
+        <h1>Game Over</h1>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <button id="restart-btn">Menu</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
